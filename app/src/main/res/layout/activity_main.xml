@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/txtSenha"
+        android:id="@+id/txtSenhaCadastro"
         android:layout_width="160dp"
         android:layout_height="22dp"
         android:layout_marginBottom="252dp"
@@ -24,7 +24,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/txtEmail"
+        android:id="@+id/txtEmailCadastro"
         android:layout_width="162dp"
         android:layout_height="44dp"
         android:layout_marginBottom="8dp"
@@ -70,7 +70,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.566"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtSenha"
+        app:layout_constraintTop_toBottomOf="@+id/txtSenhaCadastro"
         app:layout_constraintVertical_bias="0.344" />
 
     <TextView
