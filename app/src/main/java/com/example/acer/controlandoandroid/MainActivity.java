@@ -15,8 +15,6 @@ import com.example.acer.controlandoandroid.model.Login;
 import com.example.acer.controlandoandroid.model.User;
 import com.example.acer.controlandoandroid.service.UserClient;
 
-import java.security.Principal;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -29,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     //RETROFIT
     private static User user;
     Retrofit.Builder builder = new Retrofit.Builder()
-            .baseUrl("http://200.0.0.14:3000/")
+            .baseUrl("http://192.168.0.20:3000/")
             .addConverterFactory(GsonConverterFactory.create());
 
     Retrofit retrofit = builder.build();
@@ -71,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, ""+user.toString(), Toast.LENGTH_LONG).show();
                     //FUNCAO SQLITE
                     localDatabase(user);
-                    startActivity(new Intent(MainActivity.this, Principal.class));
+                    startActivity(new Intent(MainActivity.this, com.example.acer.controlandoandroid.Principal.class));
                 } else {
                     Log.i("RETROFIT", response.message());
                     Toast.makeText(MainActivity.this, "Erro: "+ response.message(), Toast.LENGTH_LONG).show();

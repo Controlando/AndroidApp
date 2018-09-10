@@ -64,8 +64,8 @@ public class Principal extends AppCompatActivity {
     View.OnClickListener verHist = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            //Intent it = new Intent(Principal.this, TelaHistorico.class);
-            //startActivity(it);
+            Intent it = new Intent(Principal.this, TelaHistorico.class);
+            startActivity(it);
         }
     };
     View.OnClickListener verConfig = new View.OnClickListener() {
