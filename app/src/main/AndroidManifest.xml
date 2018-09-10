@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".principal">
+        <activity android:name=".AlterarSenha">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,7 +22,7 @@
         <activity android:name=".Relatorio" />
         <activity android:name=".CadastroReceita" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".AlterarSenha" />
+        <activity android:name=".principal" />
         <activity android:name=".AlterarNome"></activity>
     </application>
 
