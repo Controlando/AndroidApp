@@ -18,12 +18,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Principal"/>
+
         <activity android:name=".Main2Activity" />
         <activity android:name=".Relatorio" />
         <activity android:name=".CadastroReceita" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".principal" />
-        <activity android:name=".AlterarNome"></activity>
+        <activity android:name=".Lancamentos" />
+        <activity android:name=".AlterarNome" />
+        <activity android:name=".CadastroMetas" />
+        <activity android:name=".CadastroDespesa" />
+        <activity android:name=".CadastroReceita3" />
+        <activity android:name=".CadastroReceita2" />
+        <activity android:name=".TelaConfig"></activity>
     </application>
 
 </manifest>

@@ -16,6 +16,7 @@
                             <entry key="launcher">
                               <value>
                                 <PersistentState>
+<<<<<<< HEAD
                                   <option name="children">
                                     <map>
                                       <entry key="foregroundImage">
@@ -34,6 +35,11 @@
                                   <option name="values">
                                     <map>
                                       <entry key="foregroundImage" value="C:\Users\Daniel\Downloads\Controlando.png" />
+=======
+                                  <option name="values">
+                                    <map>
+                                      <entry key="foregroundImage" value="C:\Users\ACER\Downloads\Controlando.png" />
+>>>>>>> c4a0c59a2321de1f7406d7bd30e8674ffd69626f
                                     </map>
                                   </option>
                                 </PersistentState>
