@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".principal">
+        <activity android:name=".Principal">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,9 +21,14 @@
         <activity android:name=".Main2Activity" />
         <activity android:name=".Relatorio" />
         <activity android:name=".CadastroReceita" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".Lancamentos" />
         <activity android:name=".AlterarSenha" />
-        <activity android:name=".AlterarNome"></activity>
+        <activity android:name=".AlterarNome" />
+        <activity android:name=".CadastroMetas" />
+        <activity android:name=".CadastroDespesa" />
+        <activity android:name=".CadastroReceita3" />
+        <activity android:name=".CadastroReceita2" />
+        <activity android:name=".TelaConfig"></activity>
     </application>
 
 </manifest>
