@@ -12,7 +12,7 @@ public class Main2Activity extends AppCompatActivity {
         public void onClick(View view) {
             
         }
-    }
+    };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
