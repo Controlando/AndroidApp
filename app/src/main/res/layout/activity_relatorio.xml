@@ -8,12 +8,13 @@
 
     <LinearLayout
         android:layout_width="368dp"
-        android:layout_height="551dp"
+        android:layout_height="565dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:background="@color/Fund"
+        android:background="#ff82b3ee"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,49 +22,151 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="46dp"
-            android:background="@color/Fundo"
+            android:layout_height="43dp"
+            android:background="#FAFAFA"
             android:orientation="horizontal">
 
-            <ImageButton
-                android:id="@+id/imageButton"
-                android:layout_width="33dp"
-                android:layout_height="41dp"
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="#FAFAFA"
-                app:srcCompat="@drawable/btnesquerdo" />
+                android:text="Lançamentos" />
 
-            <TextView
-                android:id="@+id/textView13"
+            <Button
+                android:id="@+id/button6"
                 android:layout_width="wrap_content"
-                android:layout_height="42dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/Lancamento"
-                android:textSize="15dp" />
+                android:background="#FAFAFA"
+                android:text="Relatório" />
 
-            <TextView
-                android:id="@+id/textView12"
+            <Button
+                android:id="@+id/button7"
                 android:layout_width="wrap_content"
-                android:layout_height="42dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/RelatorioStr"
-                android:textSize="15dp" />
-
-            <TextView
-                android:id="@+id/textView14"
-                android:layout_width="wrap_content"
-                android:layout_height="36dp"
-                android:layout_weight="1"
-                android:text="Historico"
-                android:textSize="14sp" />
+                android:background="#FAFAFA"
+                android:text="Histórico"
+                tools:text="#000000" />
 
             <ImageButton
-                android:id="@+id/imageButton2"
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:id="@+id/imageButton3"
+                android:layout_width="63dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#FAFAFA"
                 app:srcCompat="@drawable/ic_action_name" />
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="501dp"
+            android:background="#ff82b3ee"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:paddingLeft="15dp"
+                    android:text="Receitas"
+                    android:textColor="#000000" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="143dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#FAFAFA">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView15"
+                            android:layout_width="43dp"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="15dp"
+                            android:text="#" />
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="115dp"
+                            android:layout_height="wrap_content"
+                            android:text="Tipo de receita" />
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="95dp"
+                            android:layout_height="wrap_content"
+                            android:text="Nome" />
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="164dp"
+                            android:layout_height="wrap_content"
+                            android:text="Valor" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:paddingLeft="15dp"
+                    android:text="Despesas"
+                    android:textColor="#000000" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="147dp"
+                    android:background="#FAFAFA">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <TextView
+                            android:id="@+id/textView17"
+                            android:layout_width="43dp"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="15dp"
+                            android:text="#" />
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="115dp"
+                            android:layout_height="wrap_content"
+                            android:text="Tipo de receita" />
+
+                        <TextView
+                            android:id="@+id/textView19"
+                            android:layout_width="95dp"
+                            android:layout_height="wrap_content"
+                            android:text="Nome" />
+
+                        <TextView
+                            android:id="@+id/textView20"
+                            android:layout_width="164dp"
+                            android:layout_height="wrap_content"
+                            android:text="Valor" />
+                    </TableRow>
+
+                </TableLayout>
+            </LinearLayout>
+        </LinearLayout>
+
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     //RETROFIT
     private static User user;
     Retrofit.Builder builder = new Retrofit.Builder()
-            .baseUrl("http://192.168.0.20:3000/")
+            .baseUrl("http://200.0.0.14:3000/")
             .addConverterFactory(GsonConverterFactory.create());
 
     Retrofit retrofit = builder.build();
@@ -74,7 +74,6 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Erro: "+ response.message(), Toast.LENGTH_LONG).show();
                 }
             }
-
             @Override
             public void onFailure(Call<User> call, Throwable t) {
                 Toast.makeText(MainActivity.this, "Algo deu errado :(" + t.getMessage(), Toast.LENGTH_LONG).show();

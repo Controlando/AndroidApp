@@ -22,7 +22,7 @@ public class Main2Activity extends AppCompatActivity {
     Button btnCadastrar;
     private static User user;
     Retrofit.Builder builder = new Retrofit.Builder()
-            .baseUrl("http://192.168.0.20:3000/")
+            .baseUrl("http://200.0.0.14:3000/")
             .addConverterFactory(GsonConverterFactory.create());
     Retrofit retrofit = builder.build();
     UserClient userClient = retrofit.create(UserClient.class);
