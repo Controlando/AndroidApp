@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ControlandoAndroid</string>
+    <string name="Lancamento">Lançamentos</string>
+    <string name="RelatorioStr">Relatorio</string>
 </resources>

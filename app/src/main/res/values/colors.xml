@@ -3,4 +3,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="Fund">#82b3ee</color>
+    <color name="Opcoes">#ffffff</color>
+    <color name="Fundo">#fafafa</color>
 </resources>
