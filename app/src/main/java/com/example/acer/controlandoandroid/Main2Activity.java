@@ -42,8 +42,6 @@ public class Main2Activity extends AppCompatActivity {
             }
         }
     };
-<<<<<<< HEAD
-=======
     //Cadastro
     private void cadastrar() {
         User userBody = new User(txtEmail.getText().toString(), txtSenha.getText().toString(), "", txtNome.getText().toString());
@@ -69,7 +67,6 @@ public class Main2Activity extends AppCompatActivity {
         });
     }
 
->>>>>>> aa7699df54e67742c1b3804b363d3cd37d2ca8a8
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
