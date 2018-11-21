@@ -8,24 +8,27 @@ import android.widget.Button;
 
 public class AlterarNome extends AppCompatActivity {
     Button btnAtualizar, btnCancelar, btnLancamento, btnHistorico, btnRelatorio;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alterar_nome);
 
-        btnAtualizar = (Button)findViewById(R.id.btnAlterarNome);
-        btnCancelar = (Button)findViewById(R.id.btnCancelarAlterarNome);
+        btnAtualizar = (Button) findViewById(R.id.btnAlterarNome);
+        btnCancelar = (Button) findViewById(R.id.btnCancelarAlterarNome);
 
-        btnLancamento = (Button)findViewById(R.id.btnAlterarNomeLancamento);
-        btnHistorico = (Button)findViewById(R.id.btnAlterarNomeHistorico);
-        btnRelatorio = (Button)findViewById(R.id.btnAlterarNomeRelatorio);
+        //btnLancamento = (Button)findViewById(R.id.btnAlterarNomeLancamento);
+        //btnHistorico = (Button)findViewById(R.id.btnAlterarNomeHistorico);
+        //btnRelatorio = (Button)findViewById(R.id.btnAlterarNomeRelatorio);
 
 
-        btnLancamento.setOnClickListener(lancamento);
+        /*btnLancamento.setOnClickListener(lancamento);
         btnHistorico.setOnClickListener(historico);
-        btnRelatorio.setOnClickListener(relatorio);
-
+*/
+        btnAtualizar.setOnClickListener(atualizar);
+        btnCancelar.setOnClickListener(cancelar);
     }
+    /*
     View.OnClickListener lancamento = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
@@ -42,6 +45,20 @@ public class AlterarNome extends AppCompatActivity {
         @Override
         public void onClick(View view) {
             startActivity(new Intent(AlterarNome.this, TelaHistorico.class));
+        }
+    };
+    }*/
+
+    View.OnClickListener atualizar = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            startActivity(new Intent(AlterarNome.this, TelaPrincipalActivity.class));
+        }
+    };
+    View.OnClickListener cancelar = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            startActivity(new Intent(AlterarNome.this, TelaPrincipalActivity.class));
         }
     };
 }

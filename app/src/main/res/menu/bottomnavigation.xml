@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/inicio_item"
+        android:title="Início"
+        android:icon="@drawable/ic_home_black_24dp"
+        ></item>
+
+    <item
+        android:id="@+id/relatorios_item"
+        android:title="Relatórios"
+        android:icon="@drawable/ic_equalizer_black_24dp"
+        ></item>
+
+    <item
+        android:id="@+id/lancamentos_item"
+        android:title="Lançamentos"
+        android:icon="@drawable/ic_add_circle_black_24dp"
+        ></item>
+
+    <item
+        android:id="@+id/historico_item"
+        android:title="Histórico"
+        android:icon="@drawable/ic_history_black_24dp"
+        ></item>
+
+    <item
+        android:id="@+id/perfil_item"
+        android:title="Perfil"
+        android:icon="@drawable/ic_person_black_24dp"
+        ></item>
+
+</menu>

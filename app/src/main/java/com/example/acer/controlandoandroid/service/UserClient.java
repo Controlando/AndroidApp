@@ -14,7 +14,6 @@ import retrofit2.http.POST;
 public interface UserClient {
     @POST("login")
     Call<User> login(@Body Login login);
-
     @POST("cadastro")
     Call<User> cadastro(@Body User user);
     @GET("me")
