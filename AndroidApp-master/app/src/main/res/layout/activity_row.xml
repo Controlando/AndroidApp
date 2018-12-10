@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="100" >
+
+    <TextView
+        android:id="@+id/nameTextView111"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_weight="50"
+        android:layout_marginLeft="10dp"
+        android:text="Nome"
+        android:textSize="21dp" />
+
+    <TextView
+        android:id="@+id/ageTextView222"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_weight="50"
+        android:text="Data"
+        android:textSize="21dp" />
+
+    <TextView
+        android:id="@+id/ageTextView333"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_weight="50"
+        android:text="Valor"
+        android:textSize="21dp" />
+
+</LinearLayout>

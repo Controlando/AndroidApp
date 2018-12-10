@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E6"
+    tools:context=".FragmentPrincipal">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher_novalogo"/>
+
+
+
+            <FrameLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="395dp"
+                android:layout_marginStart="10dp"
+                android:layout_height="115dp"
+                android:background="#FAFAFA">
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Seu saldo: R$00,00"
+                    android:textColor="#240B3B"
+                    android:textAlignment="center"
+                    android:textSize="17sp"/>
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Acesso rápido"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginStart="5dp"
+                    android:textColor="#240B3B" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="70dp">
+
+
+                    <Button
+                        android:id="@+id/bRec"
+                        android:layout_width="50dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/oval"
+                        android:text="Receitas"
+                        android:textColor="#240B3B" />
+
+                    <Button
+                        android:id="@+id/bDesp"
+                        android:layout_width="50dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/oval"
+                        android:text="Despesas"
+                        android:textColor="#240B3B" />
+
+                    <Button
+                        android:id="@+id/bMet"
+                        android:layout_width="40dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/oval"
+                        android:text="Metas"
+                        android:textColor="#240B3B" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_marginTop="30dp"
+                android:layout_width="395dp"
+                android:layout_marginStart="10dp"
+                android:layout_height="115dp"
+                android:background="#FAFAFA"
+                >
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Contas a pagar -
+
+Neste campo estarão listadas as despesas do dia atual."
+
+                    android:textAlignment="center"
+                    android:textColor="#240B3B"
+                    android:textSize="17sp" />
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_marginTop="30dp"
+                android:layout_width="395dp"
+                android:layout_marginStart="10dp"
+                android:layout_height="115dp"
+                android:background="#FAFAFA">
+
+                <android.support.v4.widget.NestedScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Contas a receber -
+
+Neste campo estarão listadas as receitas do dia atual."
+                    android:textAlignment="center"
+                    android:textColor="#240B3B"
+                    android:textSize="17sp" />
+                </android.support.v4.widget.NestedScrollView>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_marginTop="30dp"
+                android:layout_width="395dp"
+                android:layout_marginStart="10dp"
+                android:layout_height="115dp"
+                android:background="#FAFAFA"
+                android:layout_marginBottom="20dp">
+                <android.support.v4.widget.NestedScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Metas a cumprir -
+
+Neste campo estarão listadas as metas do dia atual."
+                    android:textAlignment="center"
+                    android:textColor="#240B3B"
+                    android:textSize="17sp" />
+
+                </android.support.v4.widget.NestedScrollView>
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

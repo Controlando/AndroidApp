@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlteracaoMeta">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0sp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Informações da Meta"
+                    android:textAlignment="center"
+                    android:textColor="#240B3B"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"/>
+
+                <Button
+                    android:id="@+id/btn_editarMeta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="60dp"
+                    android:background="@drawable/ovalroxo"
+                    android:textColor="#FAFAFA"
+                    android:text="Editar"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:text="Nome da meta:"
+                android:textSize="18sp"
+                android:textColor="#240B3B"
+                android:layout_marginLeft="20dp" />
+
+            <EditText
+                android:id="@+id/meta_nomemeta"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:background="@drawable/oval"
+                android:ems="10"
+                android:layout_marginLeft="20dp"
+                android:textColor="#240B3B"
+                android:textAlignment="center"
+                android:inputType="textPersonName"
+                android:paddingTop="5dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Valor (R$):"
+                android:textColor="#240B3B"
+                android:textSize="18sp"
+                android:layout_marginLeft="20dp" />
+
+            <EditText
+                android:id="@+id/meta_valormeta"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:background="@drawable/oval"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:layout_marginLeft="20dp"
+                android:textColor="#240B3B"
+                android:textAlignment="center"
+                android:paddingTop="5dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:text="Data de Recebimento:"
+                android:textColor="#240B3B"
+                android:textSize="18sp"
+                android:layout_marginLeft="20dp"/>
+
+            <EditText
+                android:id="@+id/meta_datameta"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/oval"
+                android:ems="10"
+                android:hint="dd/mm/aaaa"
+                android:inputType="date"
+                android:textAlignment="center"
+                android:textColor="#240B3B"
+                tools:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Descrição"
+                android:textColor="#240B3B"
+                android:layout_marginLeft="20dp"
+                android:textSize="18sp"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/meta_descricaometa"
+                    android:layout_width="350dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/oval"
+                    tools:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:textAlignment="center"
+                    android:textColor="#240B3B"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="70dp">
+
+                <Button
+                    android:id="@+id/meta_btnExcluirMeta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:textColor="#FAFAFA"
+                    android:background="@drawable/ovalvermelho"
+                    android:text="Excluir" />
+
+                <Button
+                    android:id="@+id/meta_btnalterar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:textColor="#FAFAFA"
+                    android:background="@drawable/ovalverde"
+                    android:text="Alterar" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

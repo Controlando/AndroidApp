@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlteracaoDespesa">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Informações da Despesa"
+                        android:textAlignment="center"
+                        android:textColor="#240B3B"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="20dp"/>
+
+                <Button
+                    android:id="@+id/btn_editar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="35dp"
+                    android:background="@drawable/ovalroxo"
+                    android:textColor="#FAFAFA"
+                    android:text="Editar"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15sp"
+                    android:text="Nome da despesa:"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#240B3B"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/despesa_nomedespesa"
+                    android:background="@drawable/oval"
+                    android:ems="10"
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:inputType="textPersonName"
+                    android:textColor="#240B3B"
+                    android:textAlignment="center"
+                    android:paddingTop="5dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15sp"
+                    android:text="Valor da despesa:"
+                    android:textColor="#240B3B"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="20dp"/>
+
+                <EditText
+                    android:id="@+id/despesa_valordespesa"
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/oval"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:paddingTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:textAlignment="center"
+                    android:textColor="#240B3B"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15sp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15sp"
+                        android:text="Nível:"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#240B3B"
+                        android:textSize="18sp"  />
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp">
+
+                    </Spinner>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15sp"
+                    android:text="Data de Pagamento:"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#240B3B"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/despesa_datadespesa"
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/oval"
+                    android:ems="10"
+                    android:hint="dd/mm/aaaa"
+                    android:inputType="date"
+                    android:paddingTop="5dp"
+                    android:textAlignment="center"
+                    android:textColor="#240B3B"
+                    tools:layout_marginTop="5dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Período:"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#240B3B"
+                        android:textSize="18sp" />
+
+                    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/geral_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="15dp">
+
+                        <RadioButton android:id="@+id/despesa_rbdiario"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15dp"
+                            android:text="Diário" />
+
+                        <RadioButton android:id="@+id/despesa_rbsemanal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15dp"
+                            android:text="Semanal"/>
+
+                        <RadioButton android:id="@+id/despesa_rbmensal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15dp"
+                            android:text="Mensal"/>
+
+                        <RadioButton android:id="@+id/despesa_rbunica"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15dp"
+                            android:text="Única vez"/>
+
+                    </RadioGroup>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Descrição"
+                    android:textColor="#240B3B"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="18sp"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:layout_marginTop="5dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/despesa_descricaodespesa"
+                        android:layout_width="350dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/oval"
+                        android:layout_marginLeft="20dp"
+                        android:textAlignment="center"
+                        android:textColor="#240B3B"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="25dp">
+
+                    <Button
+                        android:id="@+id/despesa_btnExcluirDesp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/ovalvermelho"
+                        android:textColor="#FAFAFA"
+                        android:text="Excluir" />
+                    <Button
+                        android:id="@+id/despesa_btnalterar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/ovalverde"
+                        android:textColor="#FAFAFA"
+                        android:text="Alterar" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

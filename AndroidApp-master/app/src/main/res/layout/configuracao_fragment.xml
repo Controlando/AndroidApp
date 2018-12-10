@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="211dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="40dp"
+            android:text="Configurações"
+            android:textColor="#240B3B"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/altNome"
+            android:layout_width="186dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="180dp"
+            android:background="@drawable/oval"
+            android:text="Alterar nome"
+            android:textColor="#240B3B"
+             />
+
+        <Button
+            android:id="@+id/altSenha"
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="280dp"
+            android:background="@drawable/oval"
+            android:text="Alterar senha"
+            android:textColor="#240B3B" />
+
+        <Button
+            android:id="@+id/sair"
+            android:layout_width="186dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="380dp"
+            android:background="@drawable/oval"
+            android:text="Sair"
+            android:textColor="#240B3B" />
+
+        <ImageView
+            android:id="@+id/imagConfig"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="260dp"
+            android:layout_marginTop="30dp"
+            app:srcCompat="@mipmap/ic_launcher_personalconfig" />
+    </FrameLayout>
+
+</RelativeLayout>
